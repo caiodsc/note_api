@@ -13,6 +13,12 @@ class Contact < ApplicationRecord
     }
   end
 
+  def as_json(options={})
+    h = super(options)
+    h[:birthdate] = (I18n.l(self.birthdate) unless self.birthdate.blank?)
+    h
+  end
+
   '''def author
     return "Caio Câmara"
   end

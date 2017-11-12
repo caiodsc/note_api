@@ -1,6 +1,8 @@
 namespace :dev do
   desc "Configura o nosso ambiente de desenvolvimento."
   task setup: :environment do
+    puts "Setup do banco..."
+    %x(rails db:setup)
 
     puts "Cadastrando os tipos de contato..."
 
@@ -37,6 +39,17 @@ namespace :dev do
 
     puts "Telefones cadastrados com sucesso!"
 
+    puts "Cadastrando os endereços..."
+
+    Contact.all.each do |contact|
+      Address.create(
+          street: Faker::Address.street_address,
+          city: Faker::Address.city,
+          contact: contact
+      )
+    end
+
+    puts "Endereços cadastrados com sucesso!"
   end
 
 

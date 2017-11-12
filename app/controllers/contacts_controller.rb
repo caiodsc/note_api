@@ -5,7 +5,7 @@ class ContactsController < ApplicationController
   def index
     @contacts = Contact.all
 
-    render json: @contacts, include: :kind #, methods: :author#.map { |contact| contact.attributes.merge({ author: "Caio"}) }#, only: [:name, :email] #(except) #, root: true #, status: :no_content
+    render json: @contacts, methods: [:hello, :i18n] #, include: :kind #, methods: :author#.map { |contact| contact.attributes.merge({ author: "Caio"}) }#, only: [:name, :email] #(except) #, root: true #, status: :no_content
   end
 
   # GET /contacts/1

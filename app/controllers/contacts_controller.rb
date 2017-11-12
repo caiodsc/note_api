@@ -5,7 +5,7 @@ class ContactsController < ApplicationController
   def index
     @contacts = Contact.all
 
-    render json: @contacts#, methods: :author#.map { |contact| contact.attributes.merge({ author: "Caio"}) }#, only: [:name, :email] #(except) #, root: true #, status: :no_content
+    render json: @contacts, include: :kind #, methods: :author#.map { |contact| contact.attributes.merge({ author: "Caio"}) }#, only: [:name, :email] #(except) #, root: true #, status: :no_content
   end
 
   # GET /contacts/1
@@ -46,6 +46,6 @@ class ContactsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def contact_params
-      params.require(:contact).permit(:name, :email, :birthdate)
+      params.require(:contact).permit(:name, :email, :birthdate, :kind_id)
     end
 end

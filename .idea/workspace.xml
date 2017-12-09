@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44d6b31b-5844-4172-865c-fe3706cf4474" name="Default" comment="">
+    <list default="true" id="44d6b31b-5844-4172-865c-fe3706cf4474" name="Default" comment="AMS e links (HATEOAS)">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/serializers/contact_serializer.rb" afterPath="$PROJECT_DIR$/app/serializers/contact_serializer.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -23,8 +22,8 @@
       <file leaf-file-name="contact_serializer.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/serializers/contact_serializer.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -608,7 +607,7 @@
       <option name="presentableId" value="Default" />
       <updated>1512786832046</updated>
       <workItem from="1512786833596" duration="2771000" />
-      <workItem from="1512848697388" duration="3353000" />
+      <workItem from="1512848697388" duration="4009000" />
     </task>
     <task id="LOCAL-00001" summary="Continuando o projeto.">
       <created>1512788163122</created>
@@ -645,11 +644,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512851001137</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="AMS e links (HATEOAS)">
+      <created>1512852066034</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1512852066034</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6124000" />
+    <option name="totallyTimeSpent" value="6780000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1370" height="744" extended-state="0" />
@@ -686,7 +692,8 @@
     <MESSAGE value="Associações" />
     <MESSAGE value="Campos associados." />
     <MESSAGE value="Campos extra (Meta)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Campos extra (Meta)" />
+    <MESSAGE value="AMS e links (HATEOAS)" />
+    <option name="LAST_COMMIT_MESSAGE" value="AMS e links (HATEOAS)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -895,8 +902,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/serializers/contact_serializer.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

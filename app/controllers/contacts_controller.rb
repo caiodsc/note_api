@@ -10,7 +10,7 @@ class ContactsController < ApplicationController
 
   # GET /contacts/1
   def show
-    render json: @contact, include: [:kind] #, :phones, :address]  #.to_br #{name: @contact.name, birthdate: (I18n.l(@contact.birthdate) unless @contact.birthdate.blank?) } #@contact#.attributes.merge({ author: "Caio"})
+    render json: @contact, include: [:kind]#, meta: {nome: "Teste"} #, :phones, :address]  #.to_br #{name: @contact.name, birthdate: (I18n.l(@contact.birthdate) unless @contact.birthdate.blank?) } #@contact#.attributes.merge({ author: "Caio"})
   end
 
   # POST /contacts

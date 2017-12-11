@@ -4,6 +4,9 @@ git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
+# Devise
+gem 'devise_token_auth'
+gem 'devise-i18n'
 # Json Web Token
 gem 'jwt'
 gem 'active_model_serializers', '~> 0.10.0'
